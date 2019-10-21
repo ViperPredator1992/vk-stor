@@ -1,0 +1,62 @@
+.header
+    background: url(../img/head.jpg) center no-repeat
+    max-width: 1920px
+    width: 100%
+.nav
+    &-list
+        margin: 0
+        padding: 0
+        display: flex
+        list-style: none
+        &__item
+            margin: 0 5px
+        &__link
+            +normal-header
+            color: $white
+            padding: 5px 15px
+            border: 2px solid #1E90FF
+            border-radius: 50px
+            display: block
+            &:hover
+                color: $white
+.deposit
+    +normal-header  
+    color: $white  
+    display: flex
+    align-items: center
+    span
+        +bold-header  
+        background-color: $green
+        border-radius: 5px
+        padding: 9px 34px  
+        margin-left: 5px 
+.menu
+    display: flex
+    align-items: center 
+    justify-content: space-between
+    padding: 20px 0 
+.offer
+    max-width: 1280px
+    margin: auto
+    &__title
+        margin: 0 0 30px
+        font-size: 24px
+        font-weight: bold
+        color: $white
+        line-height: 31px
+        text-align: center
+        text-transform: uppercase
+    &__text
+        color: $white
+        line-height: 23px
+        text-transform: uppercase
+        position: relative
+        padding-left: 12px
+        &::before
+            content: ''
+            width: 5px
+            height: 100%
+            background-color: $blue
+            position: absolute
+            top: 0
+            left: 0
