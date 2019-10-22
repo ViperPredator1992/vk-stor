@@ -131,4 +131,22 @@
     .useful
         &__title
             &::before
-                max-width: 280px                                        
+                max-width: 280px  
+@media (max-width: 360px)
+    .modal
+        max-width: 300px
+        height: 645px
+    .form
+        &-block
+            flex-direction: column
+            input,
+            select
+                width: 100%
+                max-width: 100%
+            label
+                margin-bottom: 8px
+        &-last
+            p
+                max-width: none
+                margin-bottom: 15px
+                text-align: center
