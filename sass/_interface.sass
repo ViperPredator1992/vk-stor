@@ -6,6 +6,7 @@
 body
     font-family: 'PT Sans Caption', sans-serif
     font-weight: normal
+    background-color: $violet
 .container
     max-width: 1360px
     margin: auto
@@ -23,5 +24,55 @@ a:hover
     font:
         size: 18px
         weight: bold
-               
-    
+=bold-title
+    font:
+        size: 24px
+        weight: bold
+.flex
+    display: flex
+    flex-wrap: wrap
+    &-center
+        align-items: center
+.burger
+    display: none
+    position: absolute
+    width: 38px
+    height: 30px
+    top: 8px
+    right: 15px
+    cursor: pointer
+    &__top
+        width: 34px
+        height: 2px
+        background-color: $white
+        position: absolute
+        top: 8px
+        margin: auto
+        transition: .3s;
+    &__center
+        width: 34px
+        height: 2px
+        background-color: $white
+        position: absolute
+        top: 14px
+        margin: auto
+        transition: .3s;
+    &__bottom
+        width: 34px
+        height: 2px
+        background-color: $white
+        position: absolute
+        top: 20px
+        margin: auto 
+        transition: .3s;       
+.burger__open .burger
+    &__top
+        transform: rotate(45deg)
+        top: 10px   
+.burger__open .burger
+    &__bottom
+        transform: rotate(-45deg)
+        top: 10px   
+.burger__open .burger
+    &__center
+        opacity: 0         

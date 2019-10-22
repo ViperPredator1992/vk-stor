@@ -1,0 +1,124 @@
+@media (max-width: 1350px)
+    .header
+        .container
+            padding: 0
+    .menu
+        padding: 10px 0 20px
+        position: relative
+        &-block
+            position: relative
+            width: 100%
+    .burger
+        display: block
+    .nav
+        display: none
+        &-list
+            width: 100%
+            flex-direction: column
+            position: absolute
+            top: 58px
+            left: 0
+            z-index: 20
+            &__item
+                margin: 0
+                &:first-child
+                    border-top: 1px solid $white
+            &__link
+                border-radius: 0
+                background-color: $blue
+                border-bottom: 1px solid $white
+                color: $white
+.deposit
+    margin: auto                
+@media (max-width: 1297px)
+    .links-block
+        &__image
+            width: 230px
+@media (max-width: 1187px)
+    .links-block
+        &__image
+            width: 200px
+    .discounts
+        &__title
+            font-size: 24px
+            max-width: 230px
+            line-height: 30px
+        &-block
+            &__price
+                font-size: 20px                        
+@media (max-width: 1043px)
+    .links-block
+        &__btn
+            margin-bottom: 10px 
+        &__btn:nth-child(3), 
+        &__btn:nth-child(4)
+            margin-bottom: 10px
+        &__image
+            width: 230px
+        &__btn
+            width: 100%
+            display: block
+            margin: 0 auto 15px
+            text-align: center
+    .discounts
+        &-block
+            flex-direction: column
+            &__text
+                margin-bottom: 15px           
+@media (max-width: 991px)
+    .news-block
+        margin: 0 auto 30px
+    .buy
+        margin: 15px auto 40px  
+    .discounts
+        margin: 0 auto 25px    
+    .links
+        &-block
+            max-width: 600px
+            margin: 0 auto 25px
+            &__btn
+                display: inline-block
+                width: 48% 
+    .header
+        background-position: top center
+        background-color: $violet                     
+@media (max-width: 768px)
+    .header
+        background-size: cover
+@media (max-width: 520px)
+    .buy
+        &-block
+            &s
+                flex-direction: column
+                align-items: center
+    .links
+        &-block
+            &__btn
+                width: 100%
+                margin: 0 auto 25px 
+                &:nth-child(3), 
+                &:nth-child(4)
+                    margin: 0 auto 25px               
+@media (max-width: 425px)
+    .logo
+        font-size: 100px
+        line-height: 90px
+    .offer
+        &__title
+            font-size: 20px
+            line-height: normal
+    .news-block
+        padding: 12px 25px
+@media (max-width: 375px)
+    .deposit
+        margin: 0
+        padding-left: 15px 
+    .news-block
+        &__title
+            font-size: 20px   
+    .discounts
+        padding: 10px 15px    
+    .useful
+        &__title
+            &::before
+                max-width: 280px                                        
