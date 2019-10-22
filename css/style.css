@@ -11536,7 +11536,9 @@ a:hover {
 @media (max-width: 360px) {
   .modal {
     max-width: 300px;
-    height: 645px;
+    max-height: 350px;
+    overflow-y: scroll;
+    top: 25%;
   }
   .form-block {
     -webkit-box-orient: vertical;
