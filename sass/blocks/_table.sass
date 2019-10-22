@@ -1,4 +1,96 @@
-.table-block
-    border: 1px solid $black
-    width: 200px
-    height: 500px
+.section-table
+    padding: 20px 0
+.table
+    &-block
+        border: 1px solid $black
+        width: 100%
+        margin-bottom: 40px
+    &-box
+        position: relative
+        border: 1px solid $white
+        border-radius: 50px    
+        padding: 45px 100px 20px
+        max-width: 1150px
+        margin: 0 auto 50px
+        &::before
+            content: ''
+            background: url(../img/zn.png) no-repeat
+            width: 50px
+            height: 50px
+            position: absolute
+            top: -25px
+            left: 50%
+            transform: translateX(-50%)
+        &__text
+            color: $white
+            font-size: 16px
+            line-height: 21px
+            font-weight: bold
+            text-align: center
+            padding: 0
+.table
+    margin-bottom: 40px
+    thead
+        & > tr
+                & > th
+                    color: $white
+                    font-size: 18px
+                    font-weight: bold
+                    border: none
+                    vertical-align: middle
+                    text-align: center
+    tbody
+        tr
+            &:nth-child(odd)
+                td
+                    background-color: $black
+                    font-weight: bold
+                    font-size: 15px
+    tbody
+        tr
+            &:nth-child(even)
+                td
+                    font-weight: bold
+                    font-size: 15px
+                    padding: 15px 10px
+    tbody
+        tr
+            td
+                vertical-align: middle
+                color: $white 
+                img
+                    margin: auto
+                    display: block  
+                a
+                    background-color: $blue
+                    display: block
+                    border-radius: 8px
+                    padding: 5px 20px
+                    transition: .3s
+                    width: 81px
+                    height: 42px
+                    position: relative
+                    &:hover
+                        img
+                            display: none
+                        &::before
+                            content: 'Купить'
+                            font-weight: bold 
+                            font-size: 15px
+                            color: $white  
+                            position: absolute
+                            top: 50%
+                            left: 50%
+                            transform: translate(-50%,-50%)
+        .text-center
+            font-size: 16px
+            font-weight: bold  
+            width: 100%    
+            td
+                color: $blue
+.table th, 
+.table td
+    border: none
+.tr__logo
+    width: 26px
+    max-width: none       

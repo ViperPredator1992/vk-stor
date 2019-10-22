@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -11056,10 +11057,147 @@ a:hover {
   text-align: center;
 }
 
+.section-table {
+  padding: 20px 0;
+}
+
 .table-block {
   border: 1px solid #222426;
-  width: 200px;
-  height: 500px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.table-box {
+  position: relative;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 45px 100px 20px;
+  max-width: 1150px;
+  margin: 0 auto 50px;
+}
+
+.table-box::before {
+  content: '';
+  background: url(../img/zn.png) no-repeat;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.table-box__text {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0;
+}
+
+.table {
+  margin-bottom: 40px;
+}
+
+.table thead > tr > th {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.table tbody tr:nth-child(odd) td {
+  background-color: #222426;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.table tbody tr:nth-child(even) td {
+  font-weight: bold;
+  font-size: 15px;
+  padding: 15px 10px;
+}
+
+.table tbody tr td {
+  vertical-align: middle;
+  color: #ffffff;
+}
+
+.table tbody tr td img {
+  margin: auto;
+  display: block;
+}
+
+.table tbody tr td a {
+  background-color: #1E90FF;
+  display: block;
+  border-radius: 8px;
+  padding: 5px 20px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  width: 81px;
+  height: 42px;
+  position: relative;
+}
+
+.table tbody tr td a:hover img {
+  display: none;
+}
+
+.table tbody tr td a:hover::before {
+  content: 'Купить';
+  font-weight: bold;
+  font-size: 15px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.table tbody .text-center {
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.table tbody .text-center td {
+  color: #1E90FF;
+}
+
+.table th,
+.table td {
+  border: none;
+}
+
+.tr__logo {
+  width: 26px;
+  max-width: none;
+}
+
+.footer__text {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 23px;
+  max-width: 740px;
+  margin: auto;
+  padding: 30px 5px;
+}
+
+.social__link {
+  display: block;
+  margin: 0 auto 40px;
+  text-align: center;
 }
 
 @media (max-width: 1350px) {
@@ -11184,6 +11322,9 @@ a:hover {
   .header {
     background-size: cover;
   }
+  .table-box {
+    padding: 45px 30px 15px;
+  }
 }
 
 @media (max-width: 520px) {
@@ -11217,9 +11358,18 @@ a:hover {
   .news-block {
     padding: 12px 25px;
   }
+  .table-block {
+    overflow-y: hidden;
+  }
+  .table-block tr td {
+    white-space: nowrap;
+  }
 }
 
 @media (max-width: 375px) {
+  .table-box {
+    padding: 45px 15px 15px;
+  }
   .deposit {
     margin: 0;
     padding-left: 15px;
