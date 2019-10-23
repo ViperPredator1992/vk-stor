@@ -11123,6 +11123,14 @@ a:hover {
   padding: 15px 10px;
 }
 
+.table tbody tr td:nth-child(3), .table tbody tr td:nth-child(4) {
+  text-align: center;
+}
+
+.table tbody tr td:nth-child(5) a {
+  margin: auto;
+}
+
 .table tbody tr td {
   vertical-align: middle;
   color: #ffffff;
@@ -11536,9 +11544,9 @@ a:hover {
 @media (max-width: 360px) {
   .modal {
     max-width: 300px;
-    max-height: 350px;
+    max-height: 450px;
     overflow-y: scroll;
-    top: 25%;
+    top: 45%;
   }
   .form-block {
     -webkit-box-orient: vertical;
